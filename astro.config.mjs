@@ -1,8 +1,5 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config'
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://a2masterswaterpolo.com',
-  base: '/',
-});
+  site: 'https://wolverinemasterswp.github.io'
+})
