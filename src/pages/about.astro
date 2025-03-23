@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="page-content">
+    <h1>About Wolverine Masters Water Polo Club</h1>
+    
+    <h4>The Wolverine Masters Water Polo Club is a community of water polo enthusiasts dedicated to promoting the sport in a competitive yet friendly environment.</h4>
+    <p>Founded in 2016, we're a diverse group of water polo players united by our passion for the sport and the camaraderie it fosters. Our club brings together athletes from various backgrounds, experience levels, and parts of the world, creating a vibrant and supportive community in Ann Arbor and Southeast Michigan.</p>
+    <p>Whether you've played at the high school, collegiate club, collegiate varsity, or masters level, there's a place for you in our team. We welcome all dedicated players looking to continue their water polo journey in a competitive yet inclusive atmosphere.</p>
+    
+    <div class="image-section">
+      <div class="image-container">
+        <img src="/images/desert_duel_team_photo.jpg" alt="Team after a tournament" class="about-image" />
+      </div>
+    </div>
+
+    <div class="team-contact">
+      <h2>Team Leadership</h2>
+      
+      <div class="contact-grid">
+        <div class="team-member">
+          <h3>Shami Enteman</h3>
+          <p>Team President</p>
+        </div>
+
+        <div class="team-member">
+            <h3>Brittany Hatopp</h3>
+            <p>Team Treasurer</p>
+        </div>
+
+        <div class="team-member">
+            <h3>Paul Hernley</h3>
+            <p>Board Member at Large</p>
+        </div>
+
+        <div class="team-member">
+            <h3>Pat Parsons</h3>
+            <p>Director</p>
+        </div>
+
+        
+        <div class="team-member">
+          <h3>Dan Zacks</h3>
+          <p>Team Secretary</p>
+          <p><a href="mailto:wolverinemasterswp@gmail.com">wolverinemasterswp@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .team-contact {
+    margin: 3rem 0;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .team-member {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .team-member h3 {
+    margin-top: 0;
+    color: #0b2447;
+  }
+  
+  .image-section {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-section.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .image-container {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .image-caption {
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  h1, h2 {
+    color: #0b2447;
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: #0b2447;
+  }
+</style>

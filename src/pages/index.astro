@@ -1,16 +1,210 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <section 
+    class="main-hero" 
+    style={
+      `background-image: url('https://static.wixstatic.com/media/bb8bc6_98bd7cfcc2f94e9b9463274f4b313ccf~mv2.jpg');`
+    }
+  >
+    <h1 style="font-size: 4.5rem; font-weight: 700;">Wolverine Masters Water Polo Club</h1>
+  </section>
+
+  <div class="logo-container">
+    <img 
+      src="https://static.wixstatic.com/media/bb8bc6_b82fb9da5c944f64893aa196de9cdc5b~mv2.png/v1/fill/w_480,h_152,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WWP-logo-web.png" 
+      alt="Wolverine Water Polo Logo - Michigan Masters Water Polo" 
+      class="team-logo"
+    />
+  </div>
+
+  <div class="section-links">
+    <a href="/about">About Our Team</a>
+    <a href="/join#practice">Practice Details</a>
+    <a href="/join">Join Us</a>
+  </div>
+
+  <section class="home-content">
+    <div class="welcome-section">
+      <h2>Welcome to Wolverine Masters Water Polo</h2>
+      <p>
+        Founded in 2016, the Wolverine Masters Water Polo Club has been the home for water polo enthusiasts in Ann Arbor and Southeast Michigan. 
+      </p>
+      <p>
+        We're proud to be one of Michigan's most active masters water polo program, providing opportunities for competitive play and skill development in the Ann Arbor area.
+      </p>
+      <p>If you're looking to play water polo in Southeast Michigan, please contact us to arrange your first visit.</p>
+
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Regular Practices in Ann Arbor</h3>
+        <p>Two weekly practices held in Ann Arbor, Michigan, offering the best water polo training in Southeast Michigan.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Competitive Opportunities</h3>
+        <p>Participate in local Michigan tournaments and national masters competitions throughout the year.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>Social Events</h3>
+        <p>Team gatherings, post-practice socials, and annual team celebrations for the Michigan water polo community.</p>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h2>Ready to Jump In?</h2>
+      <p>Join the one of the top masters water polo clubs in Southeast Michigan and experience the excitement of water polo in Ann Arbor!</p>
+      <div class="cta-buttons">
+        <a href="/join" class="cta-button primary">Join Our Team</a>
+        <a href="/contact" class="cta-button secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .main-hero {
+    text-align: center;
+    color: white;
+    padding: 6rem 1rem;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+  }
+
+  .hero-tagline {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .section-links a {
+    background-color: #ffc107;
+    color: #333;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+
+  .section-links a:hover {
+    background-color: #e0a800;
+  }
+
+  .home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .welcome-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .welcome-section h2 {
+    color: #0b2447;
+    margin-bottom: 1rem;
+  }
+
+  .welcome-section p {
+    max-width: 800px;
+    margin: 1rem auto;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  .feature-card {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .feature-card h3 {
+    color: #0b2447;
+    margin-top: 0;
+  }
+
+  .cta-section {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+  }
+
+  .cta-section h2 {
+    color: #0b2447;
+    margin-bottom: 1rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .cta-button {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+
+  .cta-button.primary {
+    background-color: #0b2447;
+    color: white;
+  }
+
+  .cta-button.primary:hover {
+    background-color: #1c3d70;
+  }
+
+  .cta-button.secondary {
+    background-color: #f8f8f8;
+    color: #0b2447;
+    border: 2px solid #0b2447;
+  }
+
+  .cta-button.secondary:hover {
+    background-color: #e8e8e8;
+  }
+</style>

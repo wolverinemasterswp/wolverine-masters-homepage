@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="page-content">
+    <h1>Join Wolverine Masters Water Polo Club</h1>
+    
+    <p>We're always looking for new members to join the Wolverine Masters Water Polo Club in Ann Arbor, Michigan!</p>
+    <p>Please contact our team secretary, Dan, at <a href="mailto:wolverinemasterswp@gmail.com">wolverinemasterswp@gmail.com</a> to arrange your first practice.</p>
+
+    <div class="membership-info">
+      <div class="info-box">
+        <h2>Membership Details</h2>
+        <p>We require an American Water Polo membership in order to join the team.</p>
+        <p>Membership includes access to practice sessions, and participation in local Michigan water polo matches.</p>
+        <p>Additional tournament fees may apply for competitions.</p>
+      </div>
+      
+      <div class="info-box">
+        <h2>Requirements</h2>
+        <p>We require previous water polo experience. We invite you to attend a trial practice session to get a feel for the team and level of play before committing to a full team membership.</p>
+      </div>
+    </div>
+
+    <div class="image-section">
+      <div class="image-container">
+        <img src="https://static.wixstatic.com/media/bb8bc6_3f4b84c333064680ae83e3561d32e6f9~mv2.jpeg/v1/fit/w_529,h_767,q_90,enc_avif,quality_auto/bb8bc6_3f4b84c333064680ae83e3561d32e6f9~mv2.jpeg" alt="Ann Arbor water polo practice session" class="join-image" />
+        <p class="image-caption">The team after a typical practice session in Ann Arbor, Michigan</p>
+      </div>
+    </div>
+    
+    <div class="practice-section">
+      <h2 id="practice">Practice Details</h2>
+      
+      <div class="practice-info">
+        <div class="info-box">
+          <h3>Schedule</h3>
+          <p>Monday: 8:00 PM - 9:30 PM</p>
+          <p>Thursday: 8:00 PM - 9:30 PM</p>
+        </div>
+        
+        <div class="info-box">
+          <h3>Location</h3>
+          <p>Ann Arbor, Michigan</p>
+          <p>We're conveniently located for water polo players throughout Southeast Michigan, including Ypsilanti, Detroit, and surrounding areas.</p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .membership-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .practice-section {
+    margin-top: 3rem;
+  }
+  
+  .practice-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .info-box {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .image-section {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-section.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .image-container {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .join-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .image-caption {
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  h1, h2 {
+    color: #0b2447;
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: #0b2447;
+  }
+</style>

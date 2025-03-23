@@ -1,0 +1,45 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    <!-- Favicon setup -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml" />
+    <!-- You can add these lines once you've created the corresponding files -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" /> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" /> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" /> -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Canonical URL for SEO -->
+    <link rel="canonical" href="https://a2masterswaterpolo.com" />
+    
+    <!-- Enhanced SEO Metadata -->
+    <title>Wolverine Masters Water Polo | Michigan Masters Water Polo Club</title>
+    <meta name="description" content="Join the premier masters water polo club in Southeast Michigan. The Wolverine Masters Water Polo Club in Ann Arbor offers competitive water polo for adult players in Michigan." />
+    <meta name="keywords" content="water polo, Wolverine Masters, Ann Arbor, Michigan water polo, Southeast Michigan, masters water polo, swimming, Michigan sports, adult water polo, competitive water polo" />
+    
+    <!-- Open Graph / Social Media Sharing -->
+    <meta property="og:title" content="Wolverine Masters Water Polo | Michigan" />
+    <meta property="og:description" content="Join the premier masters water polo club in Southeast Michigan. Competitive water polo for adult players in Ann Arbor, Michigan." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://a2masterswaterpolo.com/" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

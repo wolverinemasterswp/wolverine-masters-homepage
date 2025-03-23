@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="page-content">
+    <h1>Contact Wolverine Masters Water Polo in Ann Arbor, Michigan</h1>
+    
+    <p>Have questions about one of Southeast Michigan's premier water polo club? We'd love to hear from you! Use any of the methods below to get in touch with our team.</p>
+    
+    <div class="contact-methods">
+      <div class="contact-card">
+        <h2>Email</h2>
+        <p><a href="mailto:wolverinemasterswp@gmail.com">wolverinemasterswp@gmail.com</a></p>
+        <p class="contact-note">General inquiries, membership questions, and information about water polo in Michigan</p>
+      </div>
+      
+      
+      <div class="contact-card">
+        <h2>Social Media</h2>
+        <div class="social-links">
+          <a href="https://www.instagram.com/wolverine_masters_water_polo/" class="social-link">Instagram</a>
+        </div>
+        <p class="contact-note">Follow us for updates on Michigan water polo events and team activities</p>
+      </div>
+    </div>
+    
+    <div class="michigan-waterpolo">
+      <h2>Water Polo in Southeast Michigan</h2>
+      <p>The Wolverine Masters Water Polo Club is committed to growing the sport of water polo in Southeast Michigan. Our Ann Arbor-based club welcomes players from throughout the region.</p>
+      <p>If you're looking for opportunities to play water polo in Michigan, or if you're a former collegiate player looking to get back in the water, we'd love to hear from you.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .contact-card {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .contact-note {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-link {
+    color: #0b2447;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    text-decoration: underline;
+  }
+  
+  .michigan-waterpolo {
+    margin-top: 3rem;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    color: #0b2447;
+  }
+</style>

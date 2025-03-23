@@ -1,4 +1,84 @@
-# Astro Starter Kit: Minimal
+# Wolverine Masters Water Polo Website
+
+This is the official website for the Wolverine Masters Water Polo Club in Ann Arbor, Michigan.
+
+## Development
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm
+
+### Getting Started
+1. Clone the repository
+   ```bash
+   git clone https://github.com/<>/wolverine-masters-homepage.git
+   cd wolverine-masters-homepage
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and visit `http://localhost:4321`
+
+### Building for Production
+```bash
+npm run build
+```
+
+## Deployment to GitHub Pages
+
+This website is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is defined in `.github/workflows/deploy.yml`.
+
+### How it works
+1. When you push changes to the `main` branch, GitHub Actions will automatically build and deploy the site
+2. The site is built using the Astro framework and deployed to GitHub Pages
+3. The custom domain is configured using the CNAME file in the `public` directory
+
+## Custom Domain Setup
+
+### GitHub Pages Configuration
+1. Go to your GitHub repository settings
+2. Navigate to "Pages" in the sidebar
+3. Under "Custom domain", enter `a2masterswaterpolo.com`
+4. Check "Enforce HTTPS" (recommended)
+5. Save the settings
+
+### Domain Registrar Configuration
+You need to configure your domain registrar with the following DNS records:
+
+#### Option 1: Apex domain (a2masterswaterpolo.com)
+Add A records pointing to GitHub Pages servers
+
+#### Option 2: www subdomain (www.a2masterswaterpolo.com)
+Add a CNAME record:
+```
+CNAME    www    your-username.github.io
+```
+
+#### Option 3: Both apex and www subdomain
+- Set up the A records as in Option 1
+- Add this CNAME record:
+  ```
+  CNAME    www    a2masterswaterpolo.com
+  ```
+
+## Content Updates
+
+### Images
+- Store website images in the `/public/images/` directory
+- Reference them in `.astro` files using `<img src="/images/your-image.jpg" alt="Description" />`
+
+### Text Content
+- Main content files are in the `/src/pages/` directory
+- Layout templates are in the `/src/layouts/` directory
+- Components are in the `/src/components/` directory
 
 ```sh
 npm create astro@latest -- --template minimal
