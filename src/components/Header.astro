@@ -1,12 +1,13 @@
 ---
+const { BASE_URL = '' } = import.meta.env;
 ---
 
 <header>
     <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/join">Join Team</a>
-      <a href="/contact">Contact</a>
+      <a href={`${BASE_URL}/`}>Home</a>
+      <a href={`${BASE_URL}/about`}>About</a>
+      <a href={`${BASE_URL}/join`}>Join Team</a>
+      <a href={`${BASE_URL}/contact`}>Contact</a>
     </nav>
   </header>
   

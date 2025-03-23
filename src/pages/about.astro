@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const { BASE_URL = '' } = import.meta.env;
 ---
 
 <BaseLayout>
@@ -12,7 +13,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     
     <div class="image-section">
       <div class="image-container">
-        <img src="/images/desert_duel_team_photo.jpg" alt="Team after a tournament" class="about-image" />
+        <img src={`${BASE_URL}/images/desert_duel_team_photo.jpg`} alt="Team after a tournament" class="about-image" />
       </div>
     </div>
 

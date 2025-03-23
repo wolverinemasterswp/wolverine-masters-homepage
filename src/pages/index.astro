@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const { BASE_URL = '' } = import.meta.env;
 ---
 
 <BaseLayout>
@@ -21,9 +22,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </div>
 
   <div class="section-links">
-    <a href="/about">About Our Team</a>
-    <a href="/join#practice">Practice Details</a>
-    <a href="/join">Join Us</a>
+    <a href={`${BASE_URL}/about`}>About Our Team</a>
+    <a href={`${BASE_URL}/join#practice`}>Practice Details</a>
+    <a href={`${BASE_URL}/join`}>Join Us</a>
   </div>
 
   <section class="home-content">
@@ -60,8 +61,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <h2>Ready to Jump In?</h2>
       <p>Join the one of the top masters water polo clubs in Southeast Michigan and experience the excitement of water polo in Ann Arbor!</p>
       <div class="cta-buttons">
-        <a href="/join" class="cta-button primary">Join Our Team</a>
-        <a href="/contact" class="cta-button secondary">Contact Us</a>
+        <a href={`${BASE_URL}/join`} class="cta-button primary">Join Our Team</a>
+        <a href={`${BASE_URL}/contact`} class="cta-button secondary">Contact Us</a>
       </div>
     </div>
   </section>
