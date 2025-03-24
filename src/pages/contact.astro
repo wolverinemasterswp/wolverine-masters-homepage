@@ -19,7 +19,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="contact-card">
         <h2>Social Media</h2>
         <div class="social-links">
-          <a href="https://www.instagram.com/annarborwaterpolo" class="social-link">Instagram</a>
+          <a href="https://www.instagram.com/annarborwaterpolo" class="social-link">
+            <span class="icon">📷</span> Instagram
+          </a>
         </div>
         <p class="contact-note">Follow us for updates on Michigan water polo events and team activities</p>
       </div>
@@ -63,18 +65,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .social-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 1.5rem 0 1rem;
   }
   
   .social-link {
-    color: #42beb8;
+    display: inline-block;
+    background-color: #ee2a7b;
+    color: white;
     font-weight: 600;
     text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   
   .social-link:hover {
-    text-decoration: underline;
+    background-color: #1c3d70;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .icon {
+    font-size: 1.2rem;
   }
   
   .michigan-waterpolo {
@@ -87,5 +105,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   
   h1, h2 {
     color: #0b2447;
+  }
+  
+  .social-link.facebook {
+    background-color: #1877f2;
+  }
+  
+  .social-link.facebook:hover {
+    background-color: #0d65d9;
   }
 </style>
